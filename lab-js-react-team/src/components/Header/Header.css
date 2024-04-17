@@ -1,0 +1,7 @@
+.Header {
+  background-image: url("./public/assets/cocktail.jpg");
+  background-size: cover;
+  height: 100vh;
+  padding: 0;
+  overflow: hidden;
+}

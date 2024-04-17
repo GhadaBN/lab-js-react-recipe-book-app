@@ -4,7 +4,10 @@ import "./Navbar.css";
 function Navbar() {
   return (
     <div className="Navbar">
-      <h1>Navbar</h1>
+      <p className="logo">Shake Book</p>
+      <a href="#" className="about-link">
+        About
+      </a>
     </div>
   );
 }

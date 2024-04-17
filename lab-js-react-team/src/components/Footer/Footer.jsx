@@ -3,8 +3,14 @@ import "./Footer.css";
 
 function Footer() {
   return (
-    <div className="Footer">
-      <h1>Footer</h1>
+    <div className="footer">
+      <a
+        className="github-link"
+        href="https://github.com/ecemonkol/lab-js-react-recipe-book-app"
+        target="_blank"
+      >
+        Check our github repo
+      </a>
     </div>
   );
 }

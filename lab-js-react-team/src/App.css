@@ -1,0 +1,49 @@
+.cocktail-page {
+  display: flex;
+  flex-direction: row;
+  height: 90vh;
+  width: 100vw;
+  overflow: hidden;
+}
+.left-section,
+.right-section {
+  width: 50%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 16vh); /* Calculate height minus header and footer */
+}
+
+.left-section {
+  border-right: 1.3px solid #000;
+}
+
+.right-section {
+  justify-content: space-between;
+}
+
+.back-button {
+  align-self: center;
+  bottom: 0;
+  height: 8vh;
+  width: 100%;
+  position: absolute;
+  border-top: 1.3px solid #000;
+  display: flex;
+  align-items: center; /* Centers the text vertically */
+  justify-content: center; /* Centers the text horizontally */
+  font-family: "Konstant Grotesk", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 200;
+  color: black;
+  text-align: center;
+}
+
+p {
+  font-size: 1.5rem;
+  font-family: "Konstant Grotesk", sans-serif;
+  font-weight: 300;
+  padding: 2rem;
+  text-justify: justify;
+  line-height: 2rem;
+}

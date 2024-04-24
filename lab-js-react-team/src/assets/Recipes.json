@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    "id": "1",
     "name": "Matcha Gin Sour",
     "ingredients": [
       "2 oz gin",
@@ -10,12 +10,19 @@
       "1 egg white (optional for frothiness)",
       "Ice cubes"
     ],
-    "preparation": "In a shaker, combine the gin, lemon juice, simple syrup, matcha powder, and egg white (if using). Shake vigorously without ice to emulsify the egg. Add ice and shake again until well chilled. Strain into a chilled cocktail glass. Optionally, sprinkle a little matcha powder on top for garnish.",
-    "glass": "Cocktail glass",
+    "preparation_time": "5 minutes",
+    "difficulty": "Medium",
+    "preparation": [
+      "In a shaker, combine gin, lemon juice, simple syrup, and matcha powder.",
+      "Add egg white if using. Shake vigorously without ice to emulsify the egg.",
+      "Add ice and shake again until well chilled.",
+      "Strain into a chilled cocktail glass.",
+      "Optionally, sprinkle a little matcha powder on top for garnish."
+    ],
     "image": "../../public/matcha-gin-sour.png"
   },
   {
-    "id": 2,
+    "id": "2",
     "name": "Pumptini",
     "ingredients": [
       "2 oz vodka",
@@ -23,12 +30,17 @@
       "0.5 oz cream",
       "Cinnamon stick for garnish"
     ],
-    "preparation": "Shake the vodka, pumpkin spice liqueur, and cream with ice. Strain into a chilled martini glass. Garnish with a cinnamon stick.",
-    "glass": "Martini glass",
+    "preparation_time": "3 minutes",
+    "difficulty": "Easy",
+    "preparation": [
+      "Shake vodka, pumpkin spice liqueur, and cream with ice vigorously.",
+      "Strain into a chilled martini glass.",
+      "Garnish with a cinnamon stick."
+    ],
     "image": "../../public/pumptini.png"
   },
   {
-    "id": 3,
+    "id": "3",
     "name": "Margarita",
     "ingredients": [
       "1.5 oz tequila",
@@ -37,12 +49,18 @@
       "Salt for the rim",
       "Lime wedge for garnish"
     ],
-    "preparation": "Rub the rim of a glass with lime and dip in salt. Shake tequila, lime juice, and triple sec with ice. Strain into the glass. Garnish with a lime wedge.",
-    "glass": "Rocks glass",
+    "preparation_time": "5 minutes",
+    "difficulty": "Easy",
+    "preparation": [
+      "Rub the rim of the glass with a lime wedge and dip in salt.",
+      "Shake tequila, lime juice, and triple sec with ice.",
+      "Strain into the prepared glass.",
+      "Garnish with a lime wedge."
+    ],
     "image": "../../public/margarita.png"
   },
   {
-    "id": 4,
+    "id": "4",
     "name": "Espresso Martini",
     "ingredients": [
       "1.5 oz vodka",
@@ -50,12 +68,18 @@
       "0.5 oz coffee liqueur",
       "Coffee beans for garnish"
     ],
-    "preparation": "Shake vodka, espresso, and coffee liqueur with ice. Strain into a chilled martini glass. Garnish with coffee beans.",
-    "glass": "Martini glass",
+    "preparation_time": "5 minutes",
+    "difficulty": "Medium",
+    "preparation": [
+      "Combine vodka, espresso, and coffee liqueur in a shaker with ice.",
+      "Shake well until the mixture is very cold.",
+      "Strain into a chilled martini glass.",
+      "Garnish with coffee beans."
+    ],
     "image": "../../public/espresso-martini.png"
   },
   {
-    "id": 5,
+    "id": "5",
     "name": "Whiskey Sour",
     "ingredients": [
       "2 oz whiskey",
@@ -64,8 +88,96 @@
       "Ice cubes",
       "Cherry and lemon slice for garnish"
     ],
-    "preparation": "In a shaker, combine the whiskey, lemon juice, and simple syrup with ice. Shake well until the mixture is well chilled. Strain into a chilled rocks glass filled with ice. Garnish with a cherry and a slice of lemon.",
-    "glass": "Rocks glass",
+    "preparation_time": "5 minutes",
+    "difficulty": "Easy",
+    "preparation": [
+      "In a shaker, combine whiskey, lemon juice, and simple syrup with ice.",
+      "Shake until well chilled.",
+      "Strain into a chilled rocks glass filled with ice.",
+      "Garnish with a cherry and a slice of lemon."
+    ],
     "image": "../../public/whiskey-sour.png"
+  },
+  {
+    "id": "6",
+    "name": "Negroni",
+    "ingredients": [
+      "1 oz gin",
+      "1 oz Campari",
+      "1 oz sweet vermouth",
+      "Orange peel for garnish"
+    ],
+    "preparation_time": "3 minutes",
+    "difficulty": "Easy",
+    "preparation": [
+      "Add gin, Campari, and sweet vermouth into a mixing glass with ice.",
+      "Stir until well chilled.",
+      "Strain into a rocks glass over ice.",
+      "Garnish with an orange peel."
+    ],
+    "image": "../../public/espresso-martini.png"
+  },
+  {
+    "id": "7",
+    "name": "Amaretto Sour",
+    "ingredients": [
+      "1.5 oz amaretto",
+      "0.75 oz fresh lemon juice",
+      "0.5 oz simple syrup",
+      "Cherry for garnish",
+      "Orange slice for garnish"
+    ],
+    "preparation_time": "5 minutes",
+    "difficulty": "Easy",
+    "preparation": [
+      "Combine amaretto, lemon juice, and simple syrup in a shaker with ice.",
+      "Shake vigorously until the mixture is well chilled.",
+      "Strain into an ice-filled rocks glass.",
+      "Garnish with a cherry and an orange slice."
+    ],
+    "image": "../../public/espresso-martini.png"
+  },
+  {
+    "id": "8",
+    "name": "Mojito",
+    "ingredients": [
+      "2 oz white rum",
+      "1 oz lime juice",
+      "2 tsp sugar",
+      "Mint leaves",
+      "Soda water",
+      "Lime wedge for garnish",
+      "More mint for garnish"
+    ],
+    "preparation_time": "7 minutes",
+    "difficulty": "Medium",
+    "preparation": [
+      "Muddle the mint leaves and sugar in a glass.",
+      "Add lime juice and rum, and fill the glass with ice.",
+      "Top off with soda water and stir gently.",
+      "Garnish with a lime wedge and more mint."
+    ],
+    "image": "../../public/espresso-martini.png"
+  },
+  {
+    "id": "9",
+    "name": "Moscow Mule",
+    "ingredients": [
+      "2 oz vodka",
+      "6 oz ginger beer",
+      "0.5 oz lime juice",
+      "Ice cubes",
+      "Lime wedge for garnish",
+      "Mint for garnish"
+    ],
+    "preparation_time": "3 minutes",
+    "difficulty": "Easy",
+    "preparation": [
+      "Fill a mule mug with ice.",
+      "Pour vodka and lime juice over the ice.",
+      "Top with ginger beer and stir.",
+      "Garnish with a lime wedge and mint."
+    ],
+    "image": "../../public/espresso-martini.png"
   }
 ]

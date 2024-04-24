@@ -9,7 +9,7 @@ function Footer() {
         href="https://github.com/ecemonkol/lab-js-react-recipe-book-app"
         target="_blank"
       >
-        Check our github repo
+        CHECK GITHUB REPO
       </a>
     </div>
   );

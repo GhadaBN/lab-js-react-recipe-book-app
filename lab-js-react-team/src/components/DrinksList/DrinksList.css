@@ -1,0 +1,10 @@
+.drinks-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  width: 100vw;
+  /* height: 120vh; */
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 10rem;
+}

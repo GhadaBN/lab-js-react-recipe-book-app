@@ -1,7 +1,23 @@
 .Header {
-  background-image: url("./public/assets/cocktail.jpg");
+  background-image: url("../../assets/cocktails-background.jpeg");
   background-size: cover;
-  height: 100vh;
+  height: 90vh;
+  width: 100vw;
   padding: 0;
   overflow: hidden;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
+/* .header-background {
+  z-index: -1;
+  display: block;
+  height: auto;
+  height: auto;
+  left: 50%; 
+   position: absolute; 
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  width: 100%;
+} */

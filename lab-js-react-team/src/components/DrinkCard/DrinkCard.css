@@ -1,0 +1,41 @@
+.drink-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 450px;
+  height: 480px;
+  margin: 0.5rem;
+  border: 1.3px solid #000;
+  overflow: hidden;
+}
+
+.image-container {
+  display: flex; /* Add flex display */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 76%;
+  overflow: hidden;
+}
+.top-container {
+  display: flex; /* Add flex display */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Align items vertically to the center */
+  height: 12%;
+  border-bottom: 1.3px solid #000;
+}
+
+.bottom-container {
+  display: flex; /* Add flex display */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Align items vertically to the center */
+  height: 12%;
+  border-top: 1.3px solid #000;
+}
+
+h3 {
+  font-family: "Konstant Grotesk", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #000;
+  text-align: center;
+}

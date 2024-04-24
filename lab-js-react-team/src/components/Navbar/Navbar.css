@@ -2,23 +2,29 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #f8a571;
-  /* background: transparent; */
-  height: 60px;
-  border-bottom: 3px solid rgb(4, 4, 213);
+  background: #fffff3;
+  height: 4rem;
+  border-bottom: 1.5px solid #000;
+  font-size: 1.2rem;
+  overflow: hidden;
+  padding-right: 2em;
+  padding-left: 2em;
 }
 
 .logo {
   font-family: "Konstant Grotesk", sans-serif;
-  font-weight: bolder;
-  color: rgb(4, 4, 213);
-  margin-left: 30px;
+  color: #000;
 }
 
-.about-link {
+.nav-link {
   font-family: "Konstant Grotesk", sans-serif;
-  width: 50px;
   text-decoration: none;
-  color: rgb(4, 4, 213);
-  margin-right: 30px;
+  color: #000;
+}
+
+.nav-links-container {
+  max-width: 40%;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 1em;
 }

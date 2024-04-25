@@ -15,15 +15,36 @@ function AddRecipe() {
       id: "1",
       cocktailName: "Matcha Gin Sour",
       image: "../../public/matcha-gin-sour.png",
+      ingredients: [
+        "1.5 oz tequila",
+        "1 oz lime juice",
+        "0.5 oz triple sec",
+        "Salt for the rim",
+        "Lime wedge for garnish",
+      ],
     },
     {
       id: "2",
       cocktailName: "Pumptini",
       image: "../../public/pumptini.png",
+      ingredients: [
+        "1.5 oz tequila",
+        "1 oz lime juice",
+        "0.5 oz triple sec",
+        "Salt for the rim",
+        "Lime wedge for garnish",
+      ],
     },
   ]);
 
-  console.log(favDrinks);
+  const [selected, setSelected] = useState(null);
+  const toggle = (i) => {
+    if (selected === i) {
+      setSelected(null);
+    } else {
+      setSelected(i);
+    }
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -41,6 +62,11 @@ function AddRecipe() {
     ]);
 
     setCocktailName("");
+    setIngredients("");
+    setTime("");
+    setDifficulty("");
+    setPreparation("");
+    setImage("");
   };
 
   return (
@@ -132,6 +158,21 @@ function AddRecipe() {
             </div>
           ))}
         {/* </Link> */}
+      </div>
+      <div className="accordion-wrapper">
+        <div className="accordion">
+          {favDrinks.map((favDrink, i) => (
+            <div className="item" key={favDrink.id}>
+              <div className="name" onClick={() => toggle(i)}>
+                <h2>{favDrink.cocktailName}</h2>
+                <span>{selected === i ? "-" : "+"} </span>
+              </div>
+              {selected === i && (
+                <div className="content.show">{favDrink.ingredients}</div>
+              )}
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

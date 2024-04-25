@@ -1,7 +1,7 @@
 .cocktail-page {
   display: flex;
   flex-direction: row;
-  height: 90vh;
+  height: 100vh;
   width: 100vw;
   overflow: hidden;
   margin: 0; /* Ensure no external margins */
@@ -93,4 +93,39 @@ form {
 }
 .image-half {
   width: 100%;
+}
+.accordion-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+}
+
+.accordion {
+  width: 500px;
+}
+
+.item {
+  background: white;
+  margin-bottom: 5px;
+  padding: 20px;
+  background-color: pink;
+}
+.name {
+  display: flex;
+  justify-content: space-between;
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+}
+.content {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0, 1, 0, 1);
+}
+.content.show {
+  height: auto;
+  max-height: 9999px;
+  transition: all 0.5s cubic-bezier(1, 0, 1, 0);
 }

@@ -21,7 +21,18 @@ function CocktailDetailsPage() {
             <h3 className="cocktail-name">{cocktailRecipe.name}</h3>
           </div>
           <div className="right-section">
-            <p>{cocktailRecipe.preparation}</p>
+            <p className="title-recipe">Ingredients</p>
+            <ul className="text-recipe">
+              {cocktailRecipe.ingredients.map((ingredient, index) => (
+                <li key={index}>{ingredient}</li>
+              ))}
+            </ul>
+            <p className="title-recipe">Preparation</p>
+            <ul className="text-recipe">
+              {cocktailRecipe.preparation.map((step, index) => (
+                <li key={index}> {step}</li>
+              ))}
+            </ul>
             <Link to="/">
               <h4 className="back-button">Back</h4>
             </Link>

@@ -10,7 +10,10 @@ function Navbar() {
       </Link>
       <div className="nav-links-container">
         <Link to="/CocktailDetails/:cocktailId" className="nav-link">
-          RECIPES
+          COLLECTION
+        </Link>
+        <Link to="/add-recipe" className="nav-link">
+          ADD RECIPE
         </Link>
         <Link to="/about" className="nav-link">
           ABOUT

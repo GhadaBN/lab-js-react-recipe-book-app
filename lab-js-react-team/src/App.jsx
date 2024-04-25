@@ -5,6 +5,9 @@ import { Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import CocktailDetailsPage from "./pages/CocktailDetailsPage";
+import AddRecipe from "./pages/AddRecipePage";
+import cocktailsData from "../src/assets/Recipes.json";
+import { useState } from "react";
 import "./App.css";
 
 function App() {
@@ -19,6 +22,7 @@ function App() {
             element={<CocktailDetailsPage />}
           />
           <Route path="/about" element={<AboutPage />} />
+          <Route path="/add-recipe" element={<AddRecipe />} />
         </Routes>
         <Footer />
       </div>

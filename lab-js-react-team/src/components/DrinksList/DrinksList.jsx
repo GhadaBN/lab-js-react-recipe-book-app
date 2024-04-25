@@ -6,10 +6,10 @@ import DrinkCard from "../DrinkCard/DrinkCard";
 import { useState } from "react";
 
 function DrinksList() {
-  const [cocktail, setCocktail] = useState(cocktailsData);
+  const [cocktails, setCocktails] = useState(cocktailsData);
   return (
     <div className="drinks-list">
-      {cocktail.map((cocktail) => (
+      {cocktails.map((cocktail) => (
         <DrinkCard key={cocktail.id} {...cocktail} />
       ))}
     </div>

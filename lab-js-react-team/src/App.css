@@ -4,6 +4,8 @@
   height: 90vh;
   width: 100vw;
   overflow: hidden;
+  margin: 0; /* Ensure no external margins */
+  padding: 0;
 }
 .left-section,
 .right-section {
@@ -11,15 +13,13 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  height: calc(100vh - 16vh); /* Calculate height minus header and footer */
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: calc(100vh - 16vh);
 }
 
 .left-section {
   border-right: 1.3px solid #000;
-}
-
-.right-section {
-  justify-content: space-between;
 }
 
 .back-button {
@@ -39,11 +39,30 @@
   text-align: center;
 }
 
-p {
-  font-size: 1.5rem;
+.text-recipe,
+.title-recipe {
+  font-size: 1.2rem;
   font-family: "Konstant Grotesk", sans-serif;
-  font-weight: 300;
-  padding: 2rem;
+  font-weight: 300; /* Reduced from 1rem */
   text-justify: justify;
   line-height: 2rem;
+  border-bottom: 1.3px solid #000;
+  width: 100%;
+  flex-grow: 0; /* Prevents the item from growing */
+  flex-shrink: 0; /* Prevents the item from shrinking */
+  flex-basis: auto; /* Takes up only as much space as needed */
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.title-recipe {
+  /* background-color: #006537; */
+  font-weight: 500;
+}
+ul {
+  list-style-type: none;
+}
+.add-recipe {
+  display: flex;
 }

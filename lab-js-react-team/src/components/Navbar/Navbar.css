@@ -1,5 +1,6 @@
 .Navbar {
   display: flex;
+  position: fixed;
   justify-content: space-between;
   align-items: center;
   background: #fffff3;
@@ -9,6 +10,8 @@
   overflow: hidden;
   padding-right: 2em;
   padding-left: 2em;
+  width: 100vw;
+  z-index: 100;
 }
 
 .logo {

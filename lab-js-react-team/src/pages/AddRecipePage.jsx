@@ -13,25 +13,13 @@ function AddRecipe() {
   const [favDrinks, setFavDrinks] = useState([
     {
       id: "1",
-      name: "Matcha Gin Sour",
-      ingredients: [
-        "2 oz gin",
-        "0.75 oz fresh lemon juice",
-        "0.5 oz simple syrup",
-        "1 tsp matcha powder",
-        "1 egg white (optional for frothiness)",
-        "Ice cubes",
-      ],
-      preparation_time: "5 minutes",
-      difficulty: "Medium",
-      preparation: [
-        "In a shaker, combine gin, lemon juice, simple syrup, and matcha powder.",
-        "Add egg white if using. Shake vigorously without ice to emulsify the egg.",
-        "Add ice and shake again until well chilled.",
-        "Strain into a chilled cocktail glass.",
-        "Optionally, sprinkle a little matcha powder on top for garnish.",
-      ],
+      cocktailName: "Matcha Gin Sour",
       image: "../../public/matcha-gin-sour.png",
+    },
+    {
+      id: "2",
+      cocktailName: "Pumptini",
+      image: "../../public/pumptini.png",
     },
   ]);
 
@@ -52,86 +40,86 @@ function AddRecipe() {
       },
     ]);
 
-    console.log(
-      cocktailName,
-      ingredients,
-      time,
-      difficulty,
-      preparation,
-      image
-    );
+    setCocktailName("");
   };
 
   return (
-    <div className="add-recipe">
-      <form onSubmit={handleSubmit}>
-        <span>Add your recipe</span>
-        <div>
-          <label>
-            Cocktail Name
-            <input
-              name="cocktailName"
-              type="text"
-              value={cocktailName}
-              onChange={(e) => setCocktailName(e.target.value)}
-            />
-          </label>
+    <div className="add-recipe-page">
+      <div className="cocktail-page">
+        <div className="left-section">
+          <form onSubmit={handleSubmit}>
+            <span>Add your recipe</span>
+            <div>
+              <label>
+                Cocktail Name
+                <input
+                  name="cocktailName"
+                  type="text"
+                  value={cocktailName}
+                  onChange={(e) => setCocktailName(e.target.value)}
+                />
+              </label>
 
-          <label>
-            Ingredients
-            <input
-              name="ingredients"
-              type="text"
-              value={ingredients}
-              onChange={(e) => setIngredients(e.target.value)}
-            />
-          </label>
+              <label>
+                Ingredients
+                <input
+                  name="ingredients"
+                  type="text"
+                  value={ingredients}
+                  onChange={(e) => setIngredients(e.target.value)}
+                />
+              </label>
 
-          <label>
-            Preparation Time
-            <input
-              name="time"
-              type="text"
-              value={time}
-              onChange={(e) => setTime(e.target.value)}
-            />
-          </label>
-          <label>
-            Difficulty
-            <input
-              name="difficulty"
-              type="text"
-              value={difficulty}
-              onChange={(e) => setDifficulty(e.target.value)}
-            />
-          </label>
-          <label>
-            preparation
-            <input
-              name="preparation"
-              type="text"
-              value={preparation}
-              onChange={(e) => setPreparation(e.target.value)}
-            />
-          </label>
-          <label>
-            Image
-            <input
-              name="image"
-              type="url"
-              value={image}
-              onChange={(e) => setImage(e.target.value)}
-            />
-          </label>
-          <button type="submit">Add Recipe</button>
+              <label>
+                Preparation Time
+                <input
+                  name="time"
+                  type="text"
+                  value={time}
+                  onChange={(e) => setTime(e.target.value)}
+                />
+              </label>
+              <label>
+                Difficulty
+                <input
+                  name="difficulty"
+                  type="text"
+                  value={difficulty}
+                  onChange={(e) => setDifficulty(e.target.value)}
+                />
+              </label>
+              <label>
+                preparation
+                <input
+                  name="preparation"
+                  type="text"
+                  value={preparation}
+                  onChange={(e) => setPreparation(e.target.value)}
+                />
+              </label>
+              <label>
+                Image
+                <input
+                  name="image"
+                  type="url"
+                  value={image}
+                  onChange={(e) => setImage(e.target.value)}
+                />
+              </label>
+              <button type="submit">Add Recipe</button>
+            </div>
+          </form>
         </div>
-      </form>
 
-      <div>
+        <div className="right-section">
+          <img className="image-half" src="../../public/cocktail-shoot.png" />
+        </div>
+      </div>
+      <div className="fav-slider">
         {/* <Link to={`/CocktailDetailsPage/${id}`}> */}
         {favDrinks &&
           favDrinks.map((favDrink) => (
-            <div key={favDrink.id} className="drink-card">
+            <div key={favDrink.id} className="drink-card-small">
               <div className="top-container">
                 <h3>{favDrink.cocktailName}</h3>
               </div>

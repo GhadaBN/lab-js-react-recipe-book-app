@@ -16,6 +16,9 @@
   align-items: flex-start;
   justify-content: flex-start;
   height: calc(100vh - 16vh);
+  border-bottom: 1.3px solid #000;
+  overflow: hidden;
+  top: 8vh;
 }
 
 .left-section {
@@ -57,12 +60,37 @@
   padding-bottom: 0.5rem;
 }
 .title-recipe {
-  /* background-color: #006537; */
   font-weight: 500;
 }
 ul {
   list-style-type: none;
 }
-.add-recipe {
+form {
   display: flex;
+  width: 80%;
+  margin: 2rem;
+  text-align: left;
+}
+
+.add-recipe-page {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10rem;
+}
+.fav-slider {
+  display: flex;
+  height: 5vh;
+}
+.drink-card-small {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 350px;
+  height: 380px;
+  margin: 0.5rem;
+  border: 1.3px solid #000;
+  overflow: hidden;
+}
+.image-half {
+  width: 100%;
 }

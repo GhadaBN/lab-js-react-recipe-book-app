@@ -20,7 +20,7 @@
 .cocktail-page {
   display: flex;
   flex-direction: row;
-  height: 100vh;
+  height: 92vh; /* Adjusted to remove the gap */
   width: 100vw;
   overflow: hidden;
   margin: 0;
@@ -32,12 +32,13 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
   height: calc(100vh - 16vh);
   border-bottom: 1.3px solid #000;
   overflow: hidden;
   top: 8vh;
+  margin: 0;
 }
 
 .left-section {
@@ -187,4 +188,40 @@ textarea {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: 300;
   padding-right: 1rem;
+}
+
+.down-container {
+  position: relative;
+  height: 50vh;
+  width: 100vw;
+  background-color: #006e3d;
+  margin-bottom: 20vh;
+  overflow: hidden; /* Prevents any child content from overflowing */
+}
+
+.line-top-container {
+  height: 8vh;
+  width: 100%; /* Ensures it fills the width of its parent */
+  border-bottom: 1.3px solid #000;
+  position: relative; /* Optional, depending on your layout needs */
+}
+
+.line-down-container {
+  height: 8vh;
+  width: 100%;
+  border-top: 1.3px solid #000;
+  bottom: 0;
+  position: absolute;
+}
+
+.strip-container {
+  height: 10vh;
+  width: 100vw;
+}
+.text-about-page {
+  width: 70%;
+  font-family: "adobe-handwriting-ernie", sans-serif;
+  font-size: 2rem;
+  color: #000;
+  text-align: center;
 }

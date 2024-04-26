@@ -10,31 +10,31 @@
 }
 
 .image-container {
-  display: flex; /* Add flex display */
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 76%;
   overflow: hidden;
 }
 .top-container {
-  display: flex; /* Add flex display */
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Align items vertically to the center */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 12%;
   border-bottom: 1.3px solid #000;
 }
 
 .bottom-container {
-  display: flex; /* Add flex display */
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Align items vertically to the center */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 12%;
   border-top: 1.3px solid #000;
 }
 
 h3 {
-  font-family: "Mondwest-bold";
-  font-size: 1.2rem;
+  font-family: "adobe-handwriting-ernie", sans-serif;
+  font-size: 1.3rem;
   color: #000;
   text-align: center;
 }

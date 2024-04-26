@@ -95,7 +95,7 @@ function AddRecipe() {
                       value={ingredients}
                       onChange={(e) => setIngredients(e.target.value)}
                       autoFocus
-                      rows="4" // You can set the number of rows to define its height
+                      rows="6"
                     />
                   )}
                 </div>

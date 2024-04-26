@@ -26,7 +26,7 @@ function AddRecipe() {
   const [selected, setSelected] = useState(null);
   const toggle = (field) => {
     if (selected === field) {
-      setSelected(null); // Close the current field if it is already open
+      setSelected(null); // Close the current field if already open
     } else {
       setSelected(field); // Open the clicked field
     }
@@ -62,13 +62,15 @@ function AddRecipe() {
         <div className="left-section">
           <div className="accordion-wrapper">
             <form onSubmit={handleSubmit}>
-              <span>Add your recipe</span>
+              <p className="big-title-form">ADD YOUR RECIPE</p>
 
               <div className="accordion">
                 <div className="item">
                   <div className="name" onClick={() => toggle("cocktailName")}>
-                    <h2>Cocktail Name</h2>
-                    <span>{selected === "cocktailName" ? "-" : "+"}</span>
+                    <p className="title-form">Cocktail Name</p>
+                    <span className="expander">
+                      {selected === "cocktailName" ? "-" : "+"}
+                    </span>
                   </div>
                   {selected === "cocktailName" && (
                     <input
@@ -82,23 +84,28 @@ function AddRecipe() {
 
                 <div className="item">
                   <div className="name" onClick={() => toggle("ingredients")}>
-                    <h2>Ingredients</h2>
-                    <span>{selected === "ingredients" ? "-" : "+"}</span>
+                    <p className="title-form">Ingredients</p>
+                    <span className="expander">
+                      {selected === "ingredients" ? "-" : "+"}
+                    </span>
                   </div>
                   {selected === "ingredients" && (
-                    <input
-                      type="text"
+                    <textarea
+                      name="ingredients"
                       value={ingredients}
                       onChange={(e) => setIngredients(e.target.value)}
                       autoFocus
+                      rows="4" // You can set the number of rows to define its height
                     />
                   )}
                 </div>
 
                 <div className="item">
                   <div className="name" onClick={() => toggle("time")}>
-                    <h2>Preparation Time</h2>
-                    <span>{selected === "time" ? "-" : "+"}</span>
+                    <p className="title-form">Preparation Time</p>
+                    <span className="expander">
+                      {selected === "time" ? "-" : "+"}
+                    </span>
                   </div>
                   {selected === "time" && (
                     <input
@@ -112,37 +119,47 @@ function AddRecipe() {
 
                 <div className="item">
                   <div className="name" onClick={() => toggle("difficulty")}>
-                    <h2>Difficulty</h2>
-                    <span>{selected === "difficulty" ? "-" : "+"}</span>
+                    <p className="title-form">Difficulty</p>
+                    <span className="expander">
+                      {selected === "difficulty" ? "-" : "+"}
+                    </span>
                   </div>
                   {selected === "difficulty" && (
-                    <input
-                      type="text"
-                      value={difficulty}
+                    <select>
+                      name="text" value={difficulty}
                       onChange={(e) => setDifficulty(e.target.value)}
                       autoFocus
-                    />
+                      <option value="">Select Difficulty</option>
+                      <option value="easy">Easy</option>
+                      <option value="medium">Medium</option>
+                      <option value="hard">Hard</option>
+                    </select>
                   )}
                 </div>
                 <div className="item">
                   <div className="name" onClick={() => toggle("preparation")}>
-                    <h2>Preparation</h2>
-                    <span>{selected === "preparation" ? "-" : "+"}</span>
+                    <p className="title-form">preparation</p>
+                    <span className="expander">
+                      {selected === "preparation" ? "-" : "+"}
+                    </span>
                   </div>
                   {selected === "preparation" && (
-                    <input
-                      type="text"
+                    <textarea
+                      name="preparation"
                       value={preparation}
                       onChange={(e) => setPreparation(e.target.value)}
                       autoFocus
+                      row="4"
                     />
                   )}
                 </div>
 
                 <div className="item">
                   <div className="name" onClick={() => toggle("image")}>
-                    <h2>Image</h2>
-                    <span>{selected === "image" ? "-" : "+"}</span>
+                    <p className="title-form">Cover Image</p>
+                    <span className="expander">
+                      {selected === "image" ? "-" : "+"}
+                    </span>
                   </div>
                   {selected === "image" && (
                     <input
@@ -156,7 +173,7 @@ function AddRecipe() {
               </div>
 
               <button type="submit" className="submit-button">
-                Add Recipe
+                ADD RECIPE
               </button>
             </form>
           </div>

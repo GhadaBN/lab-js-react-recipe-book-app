@@ -9,9 +9,9 @@ function Navbar() {
         POUR DECISIONS
       </Link>
       <div className="nav-links-container">
-        <Link to="/CocktailDetails/:cocktailId" className="nav-link">
+        {/* <Link to="/CocktailDetails/:cocktailId" className="nav-link">
           COLLECTION
-        </Link>
+        </Link> */}
         <Link to="/add-recipe" className="nav-link">
           ADD RECIPE
         </Link>

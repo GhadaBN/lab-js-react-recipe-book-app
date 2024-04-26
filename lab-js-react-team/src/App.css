@@ -1,10 +1,29 @@
+@font-face {
+  font-family: "Migra";
+  src: url(../src/Migra-font/PPMigra-Extralight.ttf);
+  src: url(../src/Migra-font/PPMigra-ExtralightItalic.ttf);
+}
+
+@font-face {
+  font-family: "Mondwest-bold";
+  src: url(../src/Migra-font/PPMondwest-Bold.ttf);
+}
+@font-face {
+  font-family: "Mondwest-regular";
+  src: url(../src/Migra-font/PPMondwest-Regular.ttf);
+}
+@font-face {
+  font-family: "Neue-Montreal";
+  src: url(../src/Migra-font/PPNeueMontreal-Light.ttf);
+}
+
 .cocktail-page {
   display: flex;
   flex-direction: row;
   height: 100vh;
   width: 100vw;
   overflow: hidden;
-  margin: 0; /* Ensure no external margins */
+  margin: 0;
   padding: 0;
 }
 .left-section,
@@ -35,7 +54,7 @@
   display: flex;
   align-items: center; /* Centers the text vertically */
   justify-content: center; /* Centers the text horizontally */
-  font-family: "Konstant Grotesk", sans-serif;
+  font-family: Migra;
   font-size: 1.5rem;
   font-weight: 200;
   color: black;
@@ -46,7 +65,7 @@
 .title-recipe {
   font-size: 1.2rem;
   font-family: "Konstant Grotesk", sans-serif;
-  font-weight: 300; /* Reduced from 1rem */
+  font-weight: 300;
   text-justify: justify;
   line-height: 2rem;
   border-bottom: 1.3px solid #000;
@@ -96,13 +115,17 @@ form {
 .image-half {
   width: 100%;
 }
+
+/* -----> accordion form styling -----> */
+
 .accordion-wrapper {
+  background-color: #e5e5cf;
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
   width: 100%;
-  top: 8vh;
+  height: 100%;
 }
 
 .accordion {
@@ -110,16 +133,16 @@ form {
 }
 
 .item {
-  background: white;
-  margin-bottom: 5px;
-  padding: 20px;
-  background-color: pink;
+  /* margin-bottom: 5px; */
+  /* padding: 20px; */
+  /* background-color: #e5e5cf; */
+  border-bottom: 1.3px solid #000;
 }
 .name {
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  background-color: blue;
-  color: white;
+  background-color: #feb4e5;
   cursor: pointer;
 }
 .content {
@@ -138,4 +161,30 @@ form {
   width: 100%;
   margin-top: 20px;
   cursor: pointer;
+  font-size: 1.1rem;
+  font-family: "Mondwest-bold";
+  font-weight: 200;
+}
+
+textarea {
+  width: 100%;
+  border-bottom: 1.3px solid #000;
+  background-color: #fffff3;
+  border-radius: 0px 0px 10px 10px;
+}
+.title-form {
+  font-size: 1.1rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 300;
+}
+.big-title-form {
+  font-size: 1.1rem;
+  font-family: "Mondwest-bold";
+  margin-bottom: 2%;
+}
+.expander {
+  font-size: 1.2rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 300;
+  padding-right: 1rem;
 }
